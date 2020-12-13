@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Splendid - Version Antigua</title>
+      <link rel="icon" type="image/png" href="../img/fiSplendid.ico">
+      <link rel="stylesheet" href="../css/reset.css" />
+      <link rel="stylesheet" href="../css/styles.css">
+      <link rel="stylesheet" href="../css/navbar.css" />
+      <link rel="stylesheet" href="../css/carrusel.css">
+      <link rel="stylesheet" href="./css/rejillas.css" />
+      <link rel="stylesheet" href="../css/footer.css">
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   </head>
+   <body>
+      <!-- El contenido de este HTML tiene como destino mostrar la información
+         de mediante la ayuda de un boton auxiliar para los dispositivos tactiles.
+         @media (min-width: 1055px)  -->
+      <div class="contenedor-carrusell">
+         <div id="inicio" class="carrusel">
+            <div class="posters">
+               <img src="../img/braindead.png" alt="">
+               <img src="../img/castores.png" alt="">
+               <img src="../img/Piraniaconda.png" alt="">
+               <img src="../img/sharkavalanche.png" alt="">
+               <img src="../img/braindead.png" alt="">
+            </div>
+         </div>
+      </div>
+      <header>
+         <nav id="navbar" class="navbar">
+            <div class="logo"><img src="../img/logoSplendidSmall.png" alt=""></div>
+            <div class="logo-grande"><img src="../img/logoSplendid.png" alt=""></div>
+            <input type="checkbox" id="burger-checkbox" />
+            <label for="burger-checkbox" class="burger-label"></label>
+            <ul class="navbar-list">
+               <form class="buscador">
+                  <li class="navbar-item">                
+                     <input type="text" placeholder="Buscar">
+                  </li>
+                  <li class="navbar-item"> 
+                     <button type="submit"><img src="../img/lupa.png" alt="buscar"></button>
+                  </li>
+               </form>
+               <li class="navbar-item"><a href="#inicio">Inicio</a></li>
+               <li class="navbar-item"><a href="#favoritas">Favoritos</a></li>
+               <li class="navbar-item"><a href="#novedades">Novedades</a></li>
+               <li class="navbar-item"><a href="#destacadas">Destacadas</a></li>
+               <div class="sesion-texto">
+                  <li class="navbar-item"><a href="#mis-batallas">Cerrar Sessión</a></li>
+               </div>
+               <div class="buscador-grande">
+                  <li class="navbar-item">                
+                     <input type="text" placeholder="Buscar">
+                  </li>
+                  <li class="navbar-item"> 
+                     <button type="submit">Buscar</button>                           
+                  </li>
+                  <div class="sesion-icono">
+                     <a href="./index.html">
+                     <button class="sesion" type="submit">
+                     <i class="fas fa-sign-out-alt"></i>
+                     </button>
+                     </a>
+                  </div>
+               </div>
+            </ul>
+         </nav>
+      </header>
+      <main id="contenedor-rejillas">
+         <div  class="container">
+            <div id="favoritas" class="rejilla">
+               <h1 class="titulo-seccion">Favoritas</h1>
+               <div  class="secciones">
+                  <div class="pelicula">
+                     <img src="../img/sharknado1.png" alt="Sharknado">
+                     <div class="desplegable-pelicula">
+                        <input type="checkbox"  id="check1" /> 
+                        <button><label for="check1">Información</label></button> 
+                        <div class="info-pelicula">
+                           <h1>Sharknado</h1>
+                           <p class="sinopsis">Una ciudad está aterrorizada por miles de tiburones que han 
+                              sido transportados por un huracán. Cuando los tornados se empiezan a formar, 
+                              los mortíferos escualos comienzan su destrucción en el agua, la tierra y en 
+                              el aire.
+                           </p>
+                           <div class="footer-info-pelicula">
+                              <p class="clasificacion"><span>Calificación:</span> 7,3/10</p>
+                              <p class="estreno"><span>Año Estreno:</span> 2013</p>
+                              <input class="pelicula-button favorito" type="submit" value="Favorito">
+                              <a href="../detalle.html">
+                              <input class="pelicula-button" type="submit" value="Ver"></a>        
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="pelicula">
+                     <img src="../img/sharknado2.png" alt="Sharknado 2">
+                     <div class="desplegable-pelicula">
+                        <input type="checkbox"  id="check2" /> 
+                        <button><label for="check2">Información</label></button> 
+                        <div class="info-pelicula">
+                           <h1>Sharknado 2</h1>
+                           <h2>El regreso</h2>
+                           <p class="sinopsis">Un enorme tornado lleno de tiburones vuelve a asolar los 
+                              Estados Unidos, pero en esta ocasión la dammificada es la ciudad de Nueva 
+                              York. Fin y April tendrán que volver a luchar si quieren sobrevivir. 
+                              Secuela de la exitosa película para televisión.
+                           </p>
+                           <div class="footer-info-pelicula">
+                              <p class="clasificacion"><span>Calificación:</span> 7,5/10</p>
+                              <p class="estreno"><span>Año Estreno:</span> 2014</p>
+                              <input class="pelicula-button favorito" type="submit" value="Favorito">
+                              <a href="../detalle.html">
+                              <input class="pelicula-button" type="submit" value="Ver"></a>        
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="pelicula">
+                     <img src="../img/sharknado3.png" alt="Sharknado 3">
+                     <div class="desplegable-pelicula">
+                        <input type="checkbox"  id="check3" /> 
+                        <button><label for="check3">Información</label></button> 
+                        <div class="info-pelicula">
+                           <h1>Sharknado 3</h1>
+                           <h2>Oh Hell No!</h2>
+                           <p class="sinopsis">Cuando una nueva oleada de sharknados amenaza la costa de 
+                              Florida, nuestro héroe favorito, Fin, deberá una vez más arriesgar su vida 
+                              para salvar la de sus hijos en plenas vacaciones. A medida que se aproxima 
+                              al sur, los sharknados se fusionan y crecen para convertirse en más grandes
+                              y devastadores que nunca.
+                           </p>
+                           <div class="footer-info-pelicula">
+                              <p class="clasificacion"><span>Calificación:</span> 7,8/10</p>
+                              <p class="estreno"><span>Año Estreno:</span> 2015</p>
+                              <input class="pelicula-button favorito" type="submit" value="Favorito">
+                              <a href="../detalle.html">
+                              <input class="pelicula-button" type="submit" value="Ver"></a>        
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="pelicula">
+                     <img src="../img/sharknado4.png" alt="Sharknado 4">
+                     <div class="desplegable-pelicula">
+                        <input type="checkbox"  id="check4" /> 
+                        <button><label for="check4">Información</label></button> 
+                        <div class="info-pelicula">
+                           <h1>Sharknado 4</h1>
+                           <h2>Que la 4ª te acompañe</h2>
+                           <p class="sinopsis">Cinco años después de que la Costa Este de Estados Unidos 
+                              fuera devastada en Sharknado 3, Fin, su familia y el universo han estado 
+                              felizmente libres de sharnados en los años intermedios, pero ahora los 
+                              tiburones (¡y tornados!) se están multiplicando en los lugares (y formas) 
+                              más insospechados. Como los sharknados vuelven con más fuerza que nunca, 
+                              Fin Shepard (Ian Ziering) necesitará la ayuda de algunos nuevos amigos en 
+                              su incansable lucha para proteger el mundo de la amenaza sharknádica.
+                           </p>
+                           <div class="footer-info-pelicula">
+                              <p class="clasificacion"><span>Calificación:</span> 7,3/10</p>
+                              <p class="estreno"><span>Año Estreno:</span> 2016</p>
+                              <input class="pelicula-button favorito" type="submit" value="Favorito">
+                              <a href="../detalle.html">
+                              <input class="pelicula-button" type="submit" value="Ver"></a>        
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="pelicula">
+                     <img src="../img/sharknado5.png" alt="Sharknado 5">
+                     <div class="desplegable-pelicula">
+                        <input type="checkbox"  id="check5" /> 
+                        <button><label for="check5">Información</label></button> 
+                        <div class="info-pelicula">
+                           <h1>Sharknado 5</h1>
+                           <h2>Aletamiento global</h2>
+                           <p class="sinopsis">Con gran parte de Estados Unidos en ruinas, el resto del 
+                              mundo espera un sharknado global. Fin (Ian Ziering) y su familia viajan 
+                              por el mundo para evitarlo.
+                           </p>
+                           <div class="footer-info-pelicula">
+                              <p class="clasificacion"><span>Calificación:</span> 7,4/10</p>
+                              <p class="estreno"><span>Año Estreno:</span> 2017</p>
+                              <input class="pelicula-button favorito" type="submit" value="Favorito">
+                              <a href="../detalle.html">
+                              <input class="pelicula-button" type="submit" value="Ver"></a>        
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="pelicula">
+                     <img src="../img/sharknado6.png" alt="Sharknado 6">
+                     <div class="desplegable-pelicula">
+                        <input type="checkbox"  id="check6" /> 
+                        <button><label for="check6">Información</label></button> 
+                        <div class="info-pelicula">
+                           <h1>El último Sharknado</h1>
+                           <h2>Ya era hora</h2>
+                           <p class="sinopsis">¿Todo está perdido? Fin (Ian Ziering) desbloquea el poder de viajar 
+                              en el tiempo de los Sharknados para salvar al mundo y resucitar a su familia. En su 
+                              viaje, Fin luchará contra nazis, dinosaurios, caballeros e incluso se dará una vuelta 
+                              en el Arca de Noé. Esta vez lo importante no es cómo detener a los sharknados sino 
+                              cuándo. Sexta entrega de la franquicia "Sharknado"
+                           </p>
+                           <div class="footer-info-pelicula">
+                              <p class="clasificacion"><span>Calificación:</span> 7,2/10</p>
+                              <p class="estreno"><span>Año Estreno:</span> 2018</p>
+                              <input class="pelicula-button favorito" type="submit" value="Favorito">
+                              <a href="../detalle.html">
+                              <input class="pelicula-button" type="submit" value="Ver"></a>        
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div id="novedades" class="rejilla">
+               <h1 class="titulo-seccion">Novedades</h1>
+               <div class="secciones">
+                  <div class="pelicula">
+                     <img src="../img/zombisnazis1.png" alt="Zombis Nazis">
+                     <div class="desplegable-pelicula">
+                        <input type="checkbox"  id="check7" /> 
+                        <button><label for="check7">Información</label></button> 
+                        <div class="info-pelicula">
+                           <h1>Zombis nazis</h1>
+                           <h2>Dead Snow</h2>
+                           <p class="sinopsis">Un grupo de amigos, todos jóvenes snowboarders, tenía todo lo 
+                              necesario para pasar unas vacaciones geniales en la montaña: cabaña, esquíes, 
+                              motos de nieve, trineos, grandes cantidades de cerveza y mucha hormona desatada. 
+                              Pero con lo que no contaban era con que iban a sufrir los ataques de unos terribles 
+                              e implacables zombies que en su día fueron soldados nazis..
+                           </p>
+                           <div class="footer-info-pelicula">
+                              <p class="clasificacion"><span>Calificación:</span> 6,3/10</p>
+                              <p class="estreno"><span>Año Estreno:</span> 2009</p>
+                              <input class="pelicula-button nofavorito" type="submit" value="Favorito">
+                              <a href="../detalle.html">
+                              <input class="pelicula-button" type="submit" value="Ver"></a>        
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="pelicula">
+                     <img src="../img/zombisnazis2.png" alt="Zombis Nazis">
+                     <div class="desplegable-pelicula">
+                        <input type="checkbox"  id="check8" /> 
+                        <button><label for="check8">Información</label></button> 
+                        <div class="info-pelicula">
+                           <h1>Zombis nazis 2</h1>
+                           <h2>Dead Snow 2: Red vs. Dead</h2>
+                           <p class="sinopsis">El pútrido coronel Herzog vuelve a la carga, dispuesto a dar 
+                              caza a Martin, el único superviviente de Dead Snow. La amenaza de los zombis 
+                              nazis es todavía mayor, pero en esta ocasión las fuerzas aliadas contarán con 
+                              la ayuda de un comando norteamericano especializado en exterminar muertos 
+                              vivientes.
+                           </p>
+                           <div class="footer-info-pelicula">
+                              <p class="clasificacion"><span>Calificación:</span> 7/10</p>
+                              <p class="estreno"><span>Año Estreno:</span> 2014</p>
+                              <input class="pelicula-button nofavorito" type="submit" value="Favorito">
+                              <a href="../detalle.html">
+                              <input class="pelicula-button" type="submit" value="Ver"></a>        
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="pelicula">
+                     <img src="../img/sharknado1.png" alt="Sharknado">
+                     <div class="desplegable-pelicula">
+                        <input type="checkbox"  id="check9" /> 
+                        <button><label for="check9">Información</label></button> 
+                        <div class="info-pelicula">
+                           <h1>Sharknado</h1>
+                           <p class="sinopsis">Una ciudad está aterrorizada por miles de tiburones que han 
+                              sido transportados por un huracán. Cuando los tornados se empiezan a formar, 
+                              los mortíferos escualos comienzan su destrucción en el agua, la tierra y en 
+                              el aire.
+                           </p>
+                           <div class="footer-info-pelicula">
+                              <p class="clasificacion"><span>Calificación:</span> 7,3/10</p>
+                              <p class="estreno"><span>Año Estreno:</span> 2013</p>
+                              <input class="pelicula-button favorito" type="submit" value="Favorito">
+                              <a href="../detalle.html">
+                              <input class="pelicula-button" type="submit" value="Ver"></a>        
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="pelicula">
+                     <img src="../img/Piraniaconda.png" alt="Pirañaconda">
+                     <div class="desplegable-pelicula">
+                        <input type="checkbox"  id="check10" /> 
+                        <button><label for="check10">Información</label></button> 
+                        <div class="info-pelicula">
+                           <h1>Pirañaconda</h1>
+                           <p class="sinopsis">Un científico ha robado los huevos de dos pirañacondas, 
+                              criaturas que son mitad piraña y mitad anaconda. Un equipo de filmación 
+                              que trabaja cerca de lo sucedido sufrirá la ira de estas criaturas.
+                           </p>
+                           <div class="footer-info-pelicula">
+                              <p class="clasificacion"><span>Calificación:</span> 5,3/10</p>
+                              <p class="estreno"><span>Año Estreno:</span> 2012</p>
+                              <input class="pelicula-button nofavorito" type="submit" value="Favorito">
+                              <a href="../detalle.html">
+                              <input class="pelicula-button" type="submit" value="Ver"></a>        
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="pelicula">
+                     <img src="../img/castores.png" alt="Castores Zombies">
+                     <div class="desplegable-pelicula">
+                        <input type="checkbox"  id="check11" /> 
+                        <button><label for="check11">Información</label></button> 
+                        <div class="info-pelicula">
+                           <h1>Castores Zombies</h1>
+                           <h2>Zombeavers</h2>
+                           <p class="sinopsis">Tres chicas llegan a una cabaña junto a un río dispuestas 
+                              a pasar un fin de semana genial, sin chicos ni preocupaciones. Sin embargo, 
+                              no se van a poder librar de tener compañía... y no siempre humana..
+                           </p>
+                           <div class="footer-info-pelicula">
+                              <p class="clasificacion"><span>Calificación:</span> 6,4/10</p>
+                              <p class="estreno"><span>Año Estreno:</span> 2014</p>
+                              <input class="pelicula-button nofavorito" type="submit" value="Favorito">
+                              <a href="../detalle.html">
+                              <input class="pelicula-button" type="submit" value="Ver"></a>        
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="pelicula">
+                     <img src="../img/velocipastor.png" alt="VelociPastor">
+                     <div class="desplegable-pelicula">
+                        <input type="checkbox"  id="check12" /> 
+                        <button><label for="check12">Información</label></button> 
+                        <div class="info-pelicula">
+                           <h1>The VelociPastor</h1>
+                           <p class="sinopsis">Después de perder a sus padres, un sacerdote viaja a China, 
+                              donde hereda una misteriosa habilidad que le permite convertirse en un dinosaurio. 
+                              Una prostituta le convence para usar este poder para luchar contra el crimen, 
+                              y ninjas.
+                           </p>
+                           <div class="footer-info-pelicula">
+                              <p class="clasificacion"><span>Calificación:</span> 7,9/10</p>
+                              <p class="estreno"><span>Año Estreno:</span> 2018</p>
+                              <input class="pelicula-button nofavorito" type="submit" value="Favorito">
+                              <a href="../detalle.html">
+                              <input class="pelicula-button" type="submit" value="Ver"></a>        
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div></div>
+            </div>
+            <div id="destacadas" class="rejilla">
+               <h1 class="titulo-seccion">Destacadas</h1>
+               <div class="secciones">
+                  <div class="pelicula">
+                     <img src="../img/sharknado6.png" alt="Sharknado 6">
+                     <div class="desplegable-pelicula">
+                        <input type="checkbox"  id="check13" /> 
+                        <button><label for="check13">Información</label></button> 
+                        <div class="info-pelicula">
+                           <h1>El último Sharknado</h1>
+                           <h2>Ya era hora</h2>
+                           <p class="sinopsis">¿Todo está perdido? Fin (Ian Ziering) desbloquea el poder de viajar 
+                              en el tiempo de los Sharknados para salvar al mundo y resucitar a su familia. En su 
+                              viaje, Fin luchará contra nazis, dinosaurios, caballeros e incluso se dará una vuelta 
+                              en el Arca de Noé. Esta vez lo importante no es cómo detener a los sharknados sino 
+                              cuándo. Sexta entrega de la franquicia "Sharknado"
+                           </p>
+                           <div class="footer-info-pelicula">
+                              <p class="clasificacion"><span>Calificación:</span> 7,2/10</p>
+                              <p class="estreno"><span>Año Estreno:</span> 2018</p>
+                              <input class="pelicula-button favorito" type="submit" value="Favorito">
+                              <a href="../detalle.html">
+                              <input class="pelicula-button" type="submit" value="Ver"></a>        
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="pelicula">
+                     <img src="../img/sharknado5.png" alt="Sharknado 5">
+                     <div class="desplegable-pelicula">
+                        <input type="checkbox"  id="check14" /> 
+                        <button><label for="check14">Información</label></button> 
+                        <div class="info-pelicula">
+                           <h1>Sharknado 5</h1>
+                           <h2>Aletamiento global</h2>
+                           <p class="sinopsis">Con gran parte de Estados Unidos en ruinas, el resto del 
+                              mundo espera un sharknado global. Fin (Ian Ziering) y su familia viajan 
+                              por el mundo para evitarlo.
+                           </p>
+                           <div class="footer-info-pelicula">
+                              <p class="clasificacion"><span>Calificación:</span> 7,4/10</p>
+                              <p class="estreno"><span>Año Estreno:</span> 2017</p>
+                              <input class="pelicula-button favorito" type="submit" value="Favorito">
+                              <a href="../detalle.html">>
+                              <input class="pelicula-button" type="submit" value="Ver"></a>        
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="pelicula">
+                     <img src="../img/braindead.png" alt="Braindead">
+                     <div class="desplegable-pelicula">
+                        <input type="checkbox"  id="check15" /> 
+                        <button><label for="check15">Información</label></button> 
+                        <div class="info-pelicula">
+                           <h1>Braindead</h1>
+                           <h2>Tu madre se ha comido a mi perro</h2>
+                           <p class="sinopsis">Un científico descubre en Skull Island un ejemplar muy 
+                              extraño de mono rata al que acompaña una terrible maldición, según los 
+                              nativos. El ejemplar es trasladado a Nueva Zelanda para su estudio. 
+                              Por otra parte, Lionel es un joven que vive con su insoportable madre, 
+                              que no aprueba la relación que acaba de comenzar con Paquita, la hija 
+                              del tendero. Cuando los dos enamorados realizan una visita al zoológico, 
+                              ella les vigila en secreto, y será mordida por el animal encontrado en 
+                              la isla. Poco a poco, la madre de Lionel se va convirtiendo en una especie 
+                              de zombie, sedienta de carne, y que convierte en zombie a todo el que ataca.
+                           </p>
+                           <div class="footer-info-pelicula">
+                              <p class="clasificacion"><span>Calificación:</span> 8,1/10</p>
+                              <p class="estreno"><span>Año Estreno:</span> 1992</p>
+                              <input class="pelicula-button nofavorito" type="submit" value="Favorito">
+                              <a href="../detalle.html">
+                              <input class="pelicula-button" type="submit" value="Ver"></a>        
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="pelicula">
+                     <img src="../img/sharknado1.png" alt="Sharknado">
+                     <div class="desplegable-pelicula">
+                        <input type="checkbox"  id="check16" /> 
+                        <button><label for="check16">Información</label></button> 
+                        <div class="info-pelicula">
+                           <h1>Sharknado</h1>
+                           <p class="sinopsis">Una ciudad está aterrorizada por miles de tiburones que han 
+                              sido transportados por un huracán. Cuando los tornados se empiezan a formar, 
+                              los mortíferos escualos comienzan su destrucción en el agua, la tierra y en 
+                              el aire.
+                           </p>
+                           <div class="footer-info-pelicula">
+                              <p class="clasificacion"><span>Calificación:</span> 7,3/10</p>
+                              <p class="estreno"><span>Año Estreno:</span> 2013</p>
+                              <input class="pelicula-button favorito" type="submit" value="Favorito">
+                              <a href="../detalle.html">
+                              <input class="pelicula-button" type="submit" value="Ver"></a>        
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="pelicula">
+                     <img src="../img/stripperzombi.png" alt="Zombie Strippers">
+                     <div class="desplegable-pelicula">
+                        <input type="checkbox"  id="check17" /> 
+                        <button><label for="check17">Información</label></button> 
+                        <div class="info-pelicula">
+                           <h1>Zombie Strippers</h1>
+                           <p class="sinopsis">En un futuro no demasiado lejano, un virus reanimador resultado 
+                              de un experimento ultrasecreto del gobierno es liberado en un pueblo de Nebraska 
+                              cerca de un club de striptease. A medida que el virus se expande, convertirá a 
+                              las bailarinas del club en "Super Zombie Strippers", unas mujeres con un cuerpo 
+                              de escándalo y un apetito por carne humana insaciable
+                           </p>
+                           <div class="footer-info-pelicula">
+                              <p class="clasificacion"><span>Calificación:</span> 5,1/10</p>
+                              <p class="estreno"><span>Año Estreno:</span> 2008</p>
+                              <input class="pelicula-button nofavorito" type="submit" value="Favorito">
+                              <a href="../detalle.html">
+                              <input class="pelicula-button" type="submit" value="Ver"></a>        
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="pelicula">
+                     <img src="../img/sharkavalanche.png" alt="Avalanche Sharks">
+                     <div class="desplegable-pelicula">
+                        <input type="checkbox"  id="check18" /> 
+                        <button><label for="check18">Información</label></button> 
+                        <div class="info-pelicula">
+                           <h1>Avalanche Sharks</h1>
+                           <p class="sinopsis">Después de una terrible avalancha, el personal de 
+                              Twin Pines Resort Sky comienza a recibir informes sobre personas 
+                              que han desaparecido y criaturas que se mueven bajo la nieve.
+                           </p>
+                           <div class="footer-info-pelicula">
+                              <p class="clasificacion"><span>Calificación:</span> 4,9/10</p>
+                              <p class="estreno"><span>Año Estreno:</span> 2013</p>
+                              <input class="pelicula-button nofavorito" type="submit" value="Favorito">
+                              <a href="../detalle.html">
+                              <input class="pelicula-button" type="submit" value="Ver"></a>        
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer>
+         <div class="contendor-footer">
+            <div class="grid-footer">
+               <div class="footer-info">
+                  <h1>Splendid</h1>
+                  <div class="contenido-footer-info">
+                     <p>Disfruta donde quieras y cuando quieras en un número ilimitado de dispositivos. 
+                        Inicia sesión con tu cuenta de Splendid para disfrutar al instante de todo el 
+                        contenido de Spelndid desde tu ordenador personal o en cualquier 
+                        dispositivo conectado a internet que ofrezca la aplicación de Splendid, entre 
+                        ellos, smart TV, smartphones, tabletas, reproductores multimedia de streaming 
+                        y consolas de juegos.
+                     </p>
+                     <div class="social-footer-info">
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram-square"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="contacto-footer">
+                  <h1>Contactanos</h1>
+                  <div class="contenido-contacto">
+                     <form action="#">
+                        <div class="email">
+                           <label for="email">e-mail:</label>
+                           <input type="email" id="email" name="email" required /><br />  
+                        </div>
+                        <div class="message-data">
+                           <label for="message">Mensaje:</label>
+                           <textarea id="message" name="message"></textarea><br />
+                        </div>
+                        <div class="boton"><button type="submit">Enviar</button></div>
+                     </form>
+                  </div>
+               </div>
+               <div class="politica-footer">
+                  <h1>Politica de la Plataforma</h1>
+                  <div class="contenido-footer-politica">
+                     <p>Tu privacidad es extremadamente importante para nosotros. En 
+                        Splendid, nos hacemos responsables de mantener la privacidad 
+                        de los usuarios de nuestra web y de cumplir de forma estricta 
+                        con la legalidad vigente. Por favor, lee la siguiente información 
+                        para saber más sobre nuestra política de privacidad.
+                     </p>
+                     <div class="social-footer-politica">
+                        <img src="./img/logoSplendidSmall.png" alt="">
+                        <i class="far fa-copyright"></i> 
+                        Splendid marca Registrada 
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>

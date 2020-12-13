@@ -1,0 +1,31 @@
+:root{
+  --navbar-height: 4.8rem;
+  --color-principal: #5bc0de;
+}
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: var(--color-principal);
+}
+a,
+a:link,
+a:visited,
+a:focus {
+  text-decoration: none;
+}
+.contenedor-rejillas{
+  margin: auto;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+

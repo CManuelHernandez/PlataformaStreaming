@@ -1,0 +1,43 @@
+body { 
+    background:  url("../img/travolta.gif") no-repeat center center fixed; 
+    background-size: cover;
+}
+h1{
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 3em;
+    margin: .2em .5em;
+    color: rgba(0,0,0, 0.3);
+}
+.contenedor-error {
+    display: flex;
+    height: 100vh;       
+    justify-content: center;
+    align-items: flex-end; 
+}
+.cuadro-error{
+    position: absolute;
+    align-items: center; 
+    width: 50vh;       
+    height: 50vh;
+    padding: 4rem 2rem;
+}
+.cuadro-error h1{
+    color: azure;
+    font-size: 2.5rem;
+}
+.cuadro-error h2{
+    color: azure;
+    font-size: 1.4rem;
+}
+.cuadro-error input{
+    border: none;
+    width: 100%;
+    height: 2.5rem;
+    background: #5bc0de;
+    color: azure;
+    font-size: 1.5rem;
+    border-radius: 1.5rem;
+}
+.cuadro-error img{
+    padding-top: 2rem;
+}

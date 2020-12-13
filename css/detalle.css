@@ -1,0 +1,217 @@
+h1{
+    margin: 0.25rem 0;
+    display: flex;
+    justify-content: center;
+}
+.contenedor-video{
+    padding-top: var(--navbar-height);
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    color: white;   
+}
+.contenedor-video h1,
+.detalle-pelicula h1{
+    justify-content: center;
+    margin: auto;
+}
+.contenedor-video img{
+    max-width: 100%;
+    max-height: 100vh;
+}
+.zona-video{
+    margin: 0.25rem 0;  
+}
+.sinopsis-video{
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 0.25rem 0;
+    background-image: url("../img/epic.jpg");
+    background-position: center;
+    text-shadow: 0 0 0.1em var(--color-principal),
+                 0 0 0.1em var(--color-principal),
+		         0 0 0.1em var(--color-principal);
+}
+video{
+    width: 100%;
+    height: auto;
+    background: rgba(0,0,0, 0.5);
+}
+.contenedor-portada{
+    display: flex;
+    justify-content: center;
+}
+.info-pelicula-video img{
+    border-radius: 1rem;
+}
+.detalle-pelicula h1,
+.seccion-detalle h1,
+.elenco{
+    margin: 0.25rem 0;
+    border-top: solid 1px azure;
+}
+.seccion-detalle .critica-profesional{
+    font-style: italic;
+}
+.seccion-detalle .critica-profesional-autor{  
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 0.25rem;
+}
+.botones-extra{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0.25rem;
+}
+.botones-extra input{
+    padding: 0.15rem;
+    border-radius: 1.5rem;
+    color: rgba(240, 255, 255);
+    background: rgb(1, 1, 1, 0.5);
+}
+.reparto-video{
+    display: flex;
+    flex-direction: column;
+    padding: 0.25rem;
+}
+.reparto-video img{
+    padding: 0.5rem;
+    border-radius: 1rem;
+    max-width: 80%;
+    max-height: 10rem;     
+}
+.reparto-video .director,
+.reparto-video .actores,
+.reparto-video .actores .actor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;  
+    background-color: azure;
+    border-radius: 1rem;
+    margin: 0.25rem 0;
+}
+.reparto-video .actores{ 
+    border-radius: 1rem;
+    padding: 0.25rem 0 1rem 0;
+}
+.reparto-video .director .direccion,
+.reparto-video .actores .actor{
+    max-width: 45%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    color: #111;
+    background-color: #DAD5D4;
+    margin: 0.5rem 0.25rem 0 0.25rem;
+    padding: 0.25rem;
+    box-shadow:0 0.25rem 0.25rem 0 rgba(0,0,0,0.19),
+                0 0.25rem 0.25rem 0 rgba(0,0,0,0.19),
+                0 0.25rem 0.25rem 0 rgba(0,0,0,0.19),
+                0 0.25rem 0.25rem 0 rgba(0,0,0,0.19);
+}
+.reparto-video .actores .actor .real{
+    font-weight: bold;
+}
+.reparto-video .director .direccion{
+    max-width: none;
+    border-radius: 3%;
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+}
+.reparto-video .director .direccion:hover,
+.reparto-video .actores .actor:hover{
+    box-shadow:none;
+}
+@media (min-width: 440px){
+    .reparto-video .actores .casting { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .reparto-video .actores .actor{
+    justify-self:center;   
+  }    
+}
+@media (min-width: 640px){  
+    .reparto-video .actores {
+        display:flex;
+    }
+}
+@media (min-width: 768px){    
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: minmax(400px, auto);
+        grid-template-areas:
+        'video video'
+        'portada elenco'
+        'sinopsis detalle';
+    }
+    .grid-video{
+        grid-area: video;
+    }
+    .grid-portada{
+        grid-area: portada;
+        margin: auto;
+    }
+    .grid-detalle{
+        grid-area: detalle;
+        padding: 0 0.5rem;       
+    }
+    .grid-elenco{
+        grid-area: elenco;
+    }
+    .grid-sinopsis{
+        grid-area: sinopsis;
+    } 
+}
+@media (min-width: 1055px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: minmax(400px, auto);
+        grid-template-areas:
+        'video video portada'
+        'video video portada'
+        'sinopsis sinopsis detalle'
+        'elenco elenco elenco';
+    }
+    .grid-video{
+        grid-area: video;
+    }
+    .grid-portada{
+        grid-area: portada;
+    }
+    .grid-detalle{
+        grid-area: detalle;
+        padding: 0 0.5rem;       
+    }
+    .grid-elenco{
+        grid-area: elenco;
+    }
+    .grid-sinopsis{
+        grid-area: sinopsis;
+    }
+    .contenedor-video img{
+        max-width: 85%;
+    }
+    .reparto-video{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: azure;
+        border-radius: 1rem;
+        padding: 0.25rem;
+    } 
+    .reparto-video h1{
+        display: none;
+    }
+    .sinopsis-video{
+        background-size: cover;
+    }
+}

@@ -1,0 +1,74 @@
+.contenedor-login{
+    display: flex;
+}
+.cuadro-login{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 20rem;
+    height: 26rem;
+    background: #111;
+    color: azure;   
+    padding: 4rem 2rem;
+    border-radius: 1%;
+    box-shadow:0 1rem 1rem 0 rgba(0,0,0,0.19),
+                0 1rem 1rem 0 rgba(0,0,0,0.19),
+                0 1rem 1rem 0 rgba(0,0,0,0.19),
+                0 1rem 1rem 0 rgba(0,0,0,0.19)
+}
+.cuadro-login .logo{
+    position: absolute;
+    width: 80%;
+    height: 5rem;
+    top: -2.5rem;
+    border-radius: 3%;   
+} 
+.cuadro-login h1{
+    padding: 0 0 1.4rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.cuadro-login label{
+    font-weight: bold;
+}
+.cuadro-login input{
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+.cuadro-login input[type="text"], 
+.cuadro-login input[type="password"]{
+    border: none;
+    border-bottom: 1px solid var(--color-principal);
+    background: transparent;
+    outline: none;
+    height: 2.5rem;
+    color: azure;
+    font-size: 1rem;
+}
+.cuadro-login input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 2.5rem;
+    background: var(--color-principal);
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 1.5rem;
+}
+.cuadro-login input[type="submit"]:hover{
+    cursor: pointer;
+    background: #91C686;
+    transition: .3s;
+}
+.cuadro-login .recordar{
+    display: flex;
+    justify-content: flex-start;
+}
+.cuadro-login .recordar input{
+    margin: 0;
+    width: 10%;
+}
+
+  

@@ -1,0 +1,102 @@
+footer{
+    width: 100%;
+    background: #111;
+}
+.contendor-footer{
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0.75rem 1.25rem;
+}
+.contendor-footer h1{
+    font-size: 1.1rem;
+    color: azure;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    border-bottom: solid 1px var(--color-principal);
+}
+.contendor-footer p{
+    color: azure;
+}
+.footer-info,
+.contatcto-footer,
+.politica-footer
+{
+    margin : 1rem 1rem 2rem 0;
+}
+.social-footer-info{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+.contenido-footer-info a{
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    color: azure;
+    transition: 0.3s;
+}
+.contenido-footer-info a:hover{
+    color:var(--color-principal);
+}
+.contacto-footer form{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: azure;    
+}
+.contacto-footer .message-data{
+    margin-top: 1rem;
+}
+.contacto-footer form input{
+    height: 2rem;
+}
+.contacto-footer form button{
+    height: 2.5rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    background: var(--color-principal);
+    color: azure;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: .3s;
+}
+.contacto-footer form button:hover{
+    background: #91C686
+}
+form label {
+    display: block;
+  } 
+.footer-info input[type='text'],
+input[type='email'],
+textarea {
+    width: 100%;
+    font-size: 1.1rem;
+    border: 1px solid var(--color-principal);
+    border-radius: 1rem;
+    background: rgba(0,0,0, 0.5);
+    outline: none;
+    height: 2.5rem;
+    color: azure;
+    padding: 0.5rem;
+}
+textarea {
+    height: 10rem;
+}
+.social-footer-politica{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    color: azure;
+}
+.social-footer-politica img{
+    margin-right: 1rem;
+}
+@media (min-width: 1055px) {
+.grid-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
